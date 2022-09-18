@@ -1,0 +1,4 @@
+[dev]
+master.example.com ansible_user=root ansible_ssh_pass=nec@123
+worker.example.com ansible_user=root ansible_ssh_pass=nec@123
+

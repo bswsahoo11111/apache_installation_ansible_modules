@@ -1,0 +1,6 @@
+---
+# vars file for mysql-db
+mysql_packages:
+  - httpd
+
+service_name: httpd

@@ -1,0 +1,4 @@
+---
+# handlers file for mysql-db
+- name: restart apache
+  service: name=httpd state=restarted

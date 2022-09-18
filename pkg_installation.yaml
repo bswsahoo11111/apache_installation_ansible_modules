@@ -1,0 +1,23 @@
+---
+- name: package installation
+  hosts: dev
+  #gather_facts: yes
+  tasks:
+   - name: package installation
+     yum:
+       name:
+         - telnet
+         - httpd
+       state: latest
+
+   - name: Create index.html file
+     copy:
+       content: hello world
+       dest: /var/www/html/index.html
+       
+
+   - name: Start httpd service
+     service:
+       name: httpd
+       state: started
+       enabled: yes

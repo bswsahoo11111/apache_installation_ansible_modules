@@ -1,0 +1,24 @@
+---
+# tasks file for mysql-db
+#- name: Download file with check (sha256)
+#  get_url:
+#    url: "{{ downloaded_url }}"
+#    dest: "{{ downloaded_path }}"
+
+#- name: Install mysql rpm
+#  yum: 
+#   name: "{{ downloaded_rpm }}"
+#   state: present
+
+- name: Apache package installation
+  yum:
+    pkg: "{{ mysql_packages }}"
+    state: present
+
+- name: start apache service service
+  service: name= "{{ service_name }}" state=started enabled=yes
+
+- name: Adding apache idex.html
+  copy: src=./index.html dest=/var/www/html/
+  notify:
+    - restart "{{ service_name }}"

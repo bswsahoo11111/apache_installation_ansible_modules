@@ -1,0 +1,31 @@
+---
+# tasks file for mysql-db
+- name: Download file with check (sha256)
+  get_url:
+    url: "{{ downloaded_url }}"
+    dest: "{{ downloaded_path }}"
+
+- name: Install mysql rpm
+  yum: 
+   name: "{{ downloaded_rpm }}"
+   state: present
+
+- name: mysql database
+  yum:
+    pkg: "{{ mysql_packages }}"
+
+- name: start mysql service
+  service: name=mysqld state=started enabled=yes
+
+- name: create database
+  community.mysql.mysql_db: name= "{{ db_name }}" state=present
+
+- name: create user
+  mysql_user:
+    name: "{{ db_user }}"
+    password: "{{ db_user_password }}"
+    priv: '*.*:ALL'
+    state: present
+    host: '%'
+  notify:
+   - restart mysql

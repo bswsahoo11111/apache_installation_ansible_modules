@@ -1,0 +1,22 @@
+---
+# vars file for mysql-db
+mysql_packages:
+  - mysql-community-server
+  - MySQL-python
+
+mysql_root_password: 'secure-root-pw'
+ansible_python_interpreter: /usr/bin/python3
+
+
+db_user: demo_user
+db_user_password: Nec@123456
+db_name: db2
+
+
+downloaded_url: https://dev.mysql.com/get/mysql80-community-release-el7-5.noarch.rpm
+downloaded_path: /tmp
+downloaded_rpm: /tmp/mysql80-community-release-el7-5.noarch.rpm
+old_downloaded_rpm: mysql57-community-release-el7-11.noarch.rpm
+
+repo_file1: /etc/yum.repos.d/mysql-community-source.repo 
+repo_file2: /etc/yum.repos.d/mysql-community.repo
