@@ -6,6 +6,11 @@
     dest: "{{ downloaded_path }}"
 
 - name: Install mysql rpm
+  yum:
+   name: "{{ downloaded_rpm }}"
+   state: absent
+
+- name: Install mysql rpm
   yum: 
    name: "{{ downloaded_rpm }}"
    state: present
@@ -13,12 +18,53 @@
 - name: mysql database
   yum:
     pkg: "{{ mysql_packages }}"
+    state: absent  
+
+- name: mysql database
+  yum:
+    pkg: "{{ mysql_packages }}"
+    state: present
 
 - name: start mysql service
   service: name=mysqld state=started enabled=yes
 
+- name: get root password
+  shell: "grep 'A temporary password is generated for root@localhost' /var/log/mysqld.log | awk -F ' ' '{print $(NF)}'"
+  register: rp
+
+- name: check login mysql
+  command: mysql --user root --password={{ mysqlpw }} -e "show databases"
+  register: login_status
+
+- name: printing login ###printing login status for debugging
+  debug: 
+    var: login_status
+
+- name: update expired root user password
+  command: mysql --user root --password={{ rp.stdout }} --connect-expired-password --execute="ALTER USER 'root'@'localhost' IDENTIFIED BY '{{ mysqlpw }}';"
+  when: login_status == false #login status means, mysql able to login with menioned password and able to show databases, then, it will not perform
+
+- name: Copy .my.cnf file
+  template:
+    src: ./my.cnf.j2
+    dest: "{{ lookup('env', 'HOME') }}/.my.cnf"
+    mode: 0600
+
+- name: create mysql client user
+  mysql_user:
+    login_user: root
+    login_password: "{{ mysqlpw }}"
+    name: "{{ item.name }}"
+    password: "{{ item.password }}"
+    priv: '*.*:ALL,GRANT'
+    state: present
+    host: '%'
+  with_items:
+    - "{{ mysql.users }}"
+  ignore_errors: True
+
 - name: create database
-  community.mysql.mysql_db: name= "{{ db_name }}" state=present
+  mysql_db: name= "{{ db_name }}" state=present login_user=root login_password= "{{ mysqlpw }}"  
 
 - name: create user
   mysql_user:
@@ -29,3 +75,4 @@
     host: '%'
   notify:
    - restart mysql
+  ignore_errors: True

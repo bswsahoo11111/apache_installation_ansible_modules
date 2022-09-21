@@ -14,14 +14,16 @@
 ~MSle0~/checking
 
 # Command Line History (newest to oldest):
-:q!
-|2,0,1663517555,,"q!"
 :wq!
-|2,0,1663517369,,"wq!"
+|2,0,1663702481,,"wq!"
+:set nu
+|2,0,1663702214,,"set nu"
+:q!
+|2,0,1663702119,,"q!"
+:28
+|2,0,1663699104,,"28"
 :!
 |2,0,1663511548,,"!"
-:set nu
-|2,0,1663436120,,"set nu"
 
 # Search String History (newest to oldest):
 ?/checking
@@ -42,257 +44,448 @@
 # Registers:
 ""1	LINE	0
 	
-|3,1,1,1,1,0,1663517130,""
+|3,1,1,1,1,0,1663702477,""
 "2	LINE	0
-	repo_file2: /etc/yum.repos.d/mysql-community.repo
-|3,0,2,1,1,0,1663517130,"repo_file2: /etc/yum.repos.d/mysql-community.repo"
-"3	LINE	0
-	repo_file1: /etc/yum.repos.d/mysql-community-source.repo 
-|3,0,3,1,1,0,1663517129,"repo_file1: /etc/yum.repos.d/mysql-community-source.repo "
-"4	LINE	0
 	
-|3,0,4,1,1,0,1663517128,""
+|3,0,2,1,1,0,1663702269,""
+"3	LINE	0
+	  state: absent
+|3,0,3,1,1,0,1663702265,"  state: absent"
+"4	LINE	0
+	    pkg: "{{ mysql_packages }}"
+|3,0,4,1,1,0,1663702263,"    pkg: \"{{ mysql_packages }}\""
 "5	LINE	0
-	old_downloaded_rpm: mysql57-community-release-el7-11.noarch.rpm
-|3,0,5,1,1,0,1663517128,"old_downloaded_rpm: mysql57-community-release-el7-11.noarch.rpm"
+	  yum:
+|3,0,5,1,1,0,1663702261,"  yum:"
 "6	LINE	0
-	downloaded_rpm: /tmp/mysql80-community-release-el7-5.noarch.rpm
-|3,0,6,1,1,0,1663517127,"downloaded_rpm: /tmp/mysql80-community-release-el7-5.noarch.rpm"
+	- name: mysql database
+|3,0,6,1,1,0,1663702261,"- name: mysql database"
 "7	LINE	0
-	downloaded_path: /tmp
-|3,0,7,1,1,0,1663517127,"downloaded_path: /tmp"
+	  state: present
+|3,0,7,1,1,0,1663702193,"  state: present"
 "8	LINE	0
-	downloaded_url: https://dev.mysql.com/get/mysql80-community-release-el7-5.noarch.rpm
-|3,0,8,1,1,0,1663517126,"downloaded_url: https://dev.mysql.com/get/mysql80-community-release-el7-5.noarch.rpm"
+	
+|3,0,8,1,1,0,1663702151,""
 "9	LINE	0
 	
-|3,0,9,1,1,0,1663517126,""
+|3,0,9,1,1,0,1663702067,""
 
 # File marks:
-'0  4  20  ~/apache_installation/apache_install/handlers/main.yml
-|4,48,4,20,1663517555,"~/apache_installation/apache_install/handlers/main.yml"
-'1  4  20  ~/apache_installation/apache_install/handlers/main.yml
-|4,49,4,20,1663517369,"~/apache_installation/apache_install/handlers/main.yml"
-'2  6  18  ~/apache_installation/apache_install/vars/main.yml
-|4,50,6,18,1663517348,"~/apache_installation/apache_install/vars/main.yml"
-'3  24  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,51,24,17,1663517333,"~/apache_installation/apache_install/tasks/main.yml"
-'4  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,52,16,17,1663517311,"~/apache_installation/apache_install/tasks/main.yml"
-'5  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,53,16,17,1663517311,"~/apache_installation/apache_install/tasks/main.yml"
-'6  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,54,16,17,1663517205,"~/apache_installation/apache_install/tasks/main.yml"
-'7  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,55,16,17,1663517205,"~/apache_installation/apache_install/tasks/main.yml"
-'8  1  8  ~/apache_installation/apache_install/index.html
-|4,56,1,8,1663517168,"~/apache_installation/apache_install/index.html"
-'9  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,57,22,43,1663517155,"~/apache_installation/apache_install/tasks/main.yml"
+'0  27  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,48,27,0,1663702481,"~/mysql_installation/mysql_install/tasks/main.yml"
+'1  21  3  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,49,21,3,1663702428,"~/mysql_installation/mysql_install/tasks/main.yml"
+'2  21  3  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,50,21,3,1663702428,"~/mysql_installation/mysql_install/tasks/main.yml"
+'3  21  14  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,51,21,14,1663702368,"~/mysql_installation/mysql_install/tasks/main.yml"
+'4  21  14  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,52,21,14,1663702368,"~/mysql_installation/mysql_install/tasks/main.yml"
+'5  21  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,53,21,0,1663702272,"~/mysql_installation/mysql_install/tasks/main.yml"
+'6  27  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,54,27,0,1663702272,"~/mysql_installation/mysql_install/tasks/main.yml"
+'7  21  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,55,21,0,1663702272,"~/mysql_installation/mysql_install/tasks/main.yml"
+'8  22  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,56,22,0,1663702272,"~/mysql_installation/mysql_install/tasks/main.yml"
+'9  21  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,57,21,0,1663702272,"~/mysql_installation/mysql_install/tasks/main.yml"
 
 # Jumplist (newest first):
--'  4  20  ~/apache_installation/apache_install/handlers/main.yml
-|4,39,4,20,1663517555,"~/apache_installation/apache_install/handlers/main.yml"
--'  4  20  ~/apache_installation/apache_install/handlers/main.yml
-|4,39,4,20,1663517369,"~/apache_installation/apache_install/handlers/main.yml"
--'  1  0  ~/apache_installation/apache_install/handlers/main.yml
-|4,39,1,0,1663517355,"~/apache_installation/apache_install/handlers/main.yml"
--'  1  0  ~/apache_installation/apache_install/handlers/main.yml
-|4,39,1,0,1663517355,"~/apache_installation/apache_install/handlers/main.yml"
--'  6  18  ~/apache_installation/apache_install/vars/main.yml
-|4,39,6,18,1663517348,"~/apache_installation/apache_install/vars/main.yml"
--'  6  18  ~/apache_installation/apache_install/vars/main.yml
-|4,39,6,18,1663517348,"~/apache_installation/apache_install/vars/main.yml"
--'  6  18  ~/apache_installation/apache_install/vars/main.yml
-|4,39,6,18,1663517348,"~/apache_installation/apache_install/vars/main.yml"
--'  6  18  ~/apache_installation/apache_install/vars/main.yml
-|4,39,6,18,1663517348,"~/apache_installation/apache_install/vars/main.yml"
--'  24  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,24,17,1663517333,"~/apache_installation/apache_install/tasks/main.yml"
--'  24  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,24,17,1663517333,"~/apache_installation/apache_install/tasks/main.yml"
--'  24  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,24,17,1663517333,"~/apache_installation/apache_install/tasks/main.yml"
--'  24  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,24,17,1663517333,"~/apache_installation/apache_install/tasks/main.yml"
--'  24  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,24,17,1663517333,"~/apache_installation/apache_install/tasks/main.yml"
--'  24  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,24,17,1663517333,"~/apache_installation/apache_install/tasks/main.yml"
--'  24  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,24,17,1663517333,"~/apache_installation/apache_install/tasks/main.yml"
--'  24  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,24,17,1663517333,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517320,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517320,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517320,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517320,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517320,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517320,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517320,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517320,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517311,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517311,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517311,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517311,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517311,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517311,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517311,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517311,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517205,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517205,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517205,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517205,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517205,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517205,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517205,"~/apache_installation/apache_install/tasks/main.yml"
--'  16  17  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,16,17,1663517205,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  22  43  ~/apache_installation/apache_install/tasks/main.yml
-|4,39,22,43,1663517169,"~/apache_installation/apache_install/tasks/main.yml"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
--'  1  8  ~/apache_installation/apache_install/index.html
-|4,39,1,8,1663517168,"~/apache_installation/apache_install/index.html"
+-'  27  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,27,0,1663702481,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  21  3  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,21,3,1663702452,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  21  3  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,21,3,1663702428,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  21  14  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,21,14,1663702368,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  22  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,22,0,1663702331,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  22  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,22,0,1663702331,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  21  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,21,0,1663702272,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  32  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,32,0,1663702195,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  31  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,31,0,1663702195,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  27  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,27,0,1663702195,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  26  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,26,0,1663702195,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  27  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,27,0,1663702195,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  26  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,26,0,1663702195,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  28  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,28,0,1663702168,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  33  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,33,0,1663702168,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  23  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,23,0,1663702168,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  28  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,28,0,1663702168,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  23  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,23,0,1663702168,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  28  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,28,0,1663702168,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  22  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,22,0,1663702168,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  27  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,27,0,1663702168,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  29  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,29,0,1663702156,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  34  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,34,0,1663702156,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  24  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,24,0,1663702156,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  29  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,29,0,1663702156,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  24  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,24,0,1663702156,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  29  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,29,0,1663702156,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  23  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,23,0,1663702156,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  28  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,28,0,1663702156,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  16  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,16,0,1663702121,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  16  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,16,0,1663702121,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  16  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,16,0,1663702121,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  16  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,16,0,1663702121,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  16  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,16,0,1663702121,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  16  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,16,0,1663702121,"~/mysql_installation/mysql_install/tasks/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  26  8  ~/mysql_installation/mysql_install/vars/main.yml
+|4,39,26,8,1663702119,"~/mysql_installation/mysql_install/vars/main.yml"
+-'  16  0  ~/mysql_installation/mysql_install/tasks/main.yml
+|4,39,16,0,1663702106,"~/mysql_installation/mysql_install/tasks/main.yml"
 
 # History of marks within files (newest to oldest):
+
+> ~/mysql_installation/mysql_install/tasks/main.yml
+	*	1663702477	0
+	"	27	0
+	^	26	18
+	.	27	0
+	+	18	23
+	+	18	20
+	+	18	23
+	+	18	17
+	+	18	22
+	+	18	19
+	+	18	22
+	+	18	23
+	+	18	10
+	+	18	29
+	+	18	22
+	+	18	9
+	+	89	20
+	+	19	28
+	+	20	21
+	+	18	22
+	+	18	24
+	+	18	12
+	+	18	13
+	+	18	1
+	+	18	3
+	+	18	22
+	+	18	0
+	+	18	3
+	+	18	0
+	+	13	15
+	+	13	0
+	+	18	0
+	+	13	17
+	+	13	0
+	+	13	16
+	+	13	15
+	+	13	0
+	+	87	26
+	+	71	54
+	+	83	0
+	+	69	19
+	+	63	19
+	+	63	22
+	+	14	4
+	+	63	0
+	+	62	0
+	+	32	118
+	+	33	135
+	+	42	0
+	+	40	0
+	+	40	15
+	+	40	2
+	+	40	21
+	+	40	0
+	+	33	26
+	+	39	0
+	+	40	0
+	+	40	7
+	+	40	0
+	+	40	34
+	+	32	9
+	+	32	117
+	+	40	9
+	+	32	9
+	+	32	118
+	+	33	25
+	+	40	9
+	+	40	0
+	+	41	135
+	+	33	13
+	+	41	44
+	+	41	148
+	+	53	30
+	+	43	0
+	+	42	17
+	+	44	0
+	+	45	2
+	+	52	2
+	+	53	2
+	+	54	2
+	+	55	2
+	+	56	2
+	+	61	20
+	+	37	23
+	+	42	19
+	+	39	9
+	+	39	8
+	+	36	71
+	+	42	28
+	+	39	60
+	+	45	146
+	+	51	13
+	+	49	10
+	+	78	20
+	+	67	90
+	+	11	15
+	+	13	0
+	+	27	14
+	+	27	15
+	+	28	0
+	+	27	0
+	+	21	3
+	+	26	17
+	+	27	0
+
+> ~/mysql_installation/mysql_install/vars/main.yml
+	*	1663702115	0
+	"	26	8
+	^	26	9
+	.	26	8
+	+	1	3
+	+	7	18
+	+	8	16
+	+	9	11
+	+	8	27
+	+	4	15
+	+	12	11
+	+	14	12
+	+	13	13
+	+	12	82
+	+	13	18
+	+	14	19
+	+	12	9
+	+	13	9
+	+	14	9
+	+	6	0
+	+	17	57
+	+	18	40
+	+	18	10
+	+	17	9
+	+	12	83
+	+	14	21
+	+	4	25
+	+	15	19
+	+	4	0
+	+	5	3
+	+	10	0
+	+	6	37
+	+	23	46
+	+	23	12
+	+	23	16
+	+	23	14
+	+	23	16
+	+	6	0
+	+	23	29
+	+	24	183
+	+	23	6
+	+	24	13
+	+	26	8
+
+> ~/mysql_installation/mysql_install/my.cnf.j2
+	*	1663701990	0
+	"	3	17
+	^	3	18
+	.	3	17
+	+	3	17
+
+> /etc/my.cnf
+	*	1663701974	0
+	"	31	0
+	.	32	0
+	+	32	0
+
+> ~/mysql_installation/apache_install/tasks/main.yml
+	*	1663701447	0
+	"	1	0
+
+> ~/mysql_installation/my.cnf.j2
+	*	1663701388	0
+	"	4	50
+	^	4	51
+	.	4	50
+	+	3	33
+	+	4	50
+
+> ~/mysql_installation/mysql_install/[client]
+	*	1663700150	0
+	"	2	36
+	^	2	37
+	.	2	36
+	+	2	36
+
+> /usr/share/vim/vim82/doc/help.txt
+	*	1663699844	0
+	"	1	0
+
+> ~/mysql_installation/tasks/main.yml
+	*	1663698791	0
+	"	1	0
 
 > ~/apache_installation/apache_install/handlers/main.yml
 	*	1663517547	0
@@ -311,11 +504,18 @@
 	+	5	2
 	+	6	18
 
+> ~/apache_installation/apache_install/index.html
+	*	1663517167	0
+	"	1	8
+	^	1	9
+	.	1	8
+	+	1	8
+
 > ~/apache_installation/apache_install/tasks/main.yml
-	*	1663517330	0
-	"	24	17
-	^	16	18
-	.	16	17
+	*	1663512081	0
+	"	20	13
+	^	20	14
+	.	18	20
 	+	3	0
 	+	4	0
 	+	5	0
@@ -324,22 +524,9 @@
 	+	9	0
 	+	10	0
 	+	11	0
-	+	13	34
-	+	18	27
-	+	19	33
-	+	21	30
-	+	22	42
-	+	24	30
-	+	25	0
-	+	22	43
-	+	16	17
-
-> ~/apache_installation/apache_install/index.html
-	*	1663517167	0
-	"	1	8
-	^	1	9
-	.	1	8
-	+	1	8
+	+	13	27
+	+	17	19
+	+	18	20
 
 > ~/apache_installation/apache.yaml
 	*	1663511913	0
@@ -352,47 +539,6 @@
 	*	1663511738	0
 	"	1	0
 
-> ~/mysql_installation/my.cnf.j2
-	*	1663511487	0
-	"	3	33
-	^	3	34
-	.	3	33
-	+	3	33
-
-> ~/mysql_installation/mysql_install/vars/main.yml
-	*	1663511396	0
-	"	8	0
-	^	8	0
-	.	7	37
-	+	1	3
-	+	11	18
-	+	12	16
-	+	13	11
-	+	12	27
-	+	4	15
-	+	16	11
-	+	18	12
-	+	17	13
-	+	16	82
-	+	17	18
-	+	18	19
-	+	16	9
-	+	17	9
-	+	18	9
-	+	10	0
-	+	21	57
-	+	22	40
-	+	22	10
-	+	21	9
-	+	16	83
-	+	18	21
-	+	4	25
-	+	19	19
-	+	4	0
-	+	5	3
-	+	14	0
-	+	7	37
-
 > ~/mysql_installation/mysql.yaml
 	*	1663511184	0
 	"	2	11
@@ -402,93 +548,6 @@
 	+	3	1
 	+	4	16
 	+	2	11
-
-> ~/mysql_installation/mysql_install/tasks/main.yml
-	*	1663506915	0
-	"	32	6
-	^	20	13
-	.	32	0
-	+	51	0
-	+	51	16
-	+	51	2
-	+	48	0
-	+	48	4
-	+	48	0
-	+	47	9
-	+	54	17
-	+	51	0
-	+	51	2
-	+	50	0
-	+	51	2
-	+	50	0
-	+	51	2
-	+	50	2
-	+	64	17
-	+	51	0
-	+	6	22
-	+	4	2
-	+	5	77
-	+	44	0
-	+	6	31
-	+	7	24
-	+	5	25
-	+	10	31
-	+	11	16
-	+	5	22
-	+	6	23
-	+	42	26
-	+	13	24
-	+	13	2
-	+	42	26
-	+	13	22
-	+	13	19
-	+	13	23
-	+	42	20
-	+	42	23
-	+	13	19
-	+	42	19
-	+	42	1
-	+	42	0
-	+	42	1
-	+	42	2
-	+	42	0
-	+	40	0
-	+	13	23
-	+	13	20
-	+	13	23
-	+	13	17
-	+	13	22
-	+	13	19
-	+	13	22
-	+	13	23
-	+	13	10
-	+	13	29
-	+	13	22
-	+	13	9
-	+	38	20
-	+	14	28
-	+	15	21
-	+	13	22
-	+	13	24
-	+	13	12
-	+	13	13
-	+	13	1
-	+	13	3
-	+	13	22
-	+	13	0
-	+	13	3
-	+	13	0
-	+	7	15
-	+	7	0
-	+	13	0
-	+	7	17
-	+	7	0
-	+	7	16
-	+	7	15
-	+	7	0
-	+	36	26
-	+	20	54
-	+	32	0
 
 > /etc/yum.repos.d/mysql-community-source.repo
 	*	1663436611	0
@@ -551,52 +610,3 @@
 	+	15	27
 	+	18	0
 	+	4	2
-
-> ~/create_users_loop.yaml
-	*	1663410537	0
-	"	2	27
-	^	2	28
-	.	2	27
-	+	10	14
-	+	10	0
-	+	5	95
-	+	6	14
-	+	5	5
-	+	6	23
-	+	5	30
-	+	9	10
-	+	10	0
-	+	9	10
-	+	2	27
-
-> /etc/ansible/ansible.cfg
-	*	1663400553	0
-	"	71	0
-	^	71	0
-	.	71	0
-	+	71	0
-
-> ~/hosts.txt
-	*	1663400487	0
-	"	3	60
-	^	3	61
-	.	3	60
-	+	3	60
-	+	2	60
-	+	3	60
-
-> /etc/hosts
-	*	1663398856	0
-	"	4	38
-	^	4	39
-	.	4	38
-	+	4	38
-
-> /etc/ssh/sshd_config
-	*	1663398479	0
-	"	67	34
-	^	67	35
-	.	67	34
-	+	38	0
-	+	63	25
-	+	67	34

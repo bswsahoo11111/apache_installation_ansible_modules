@@ -4,10 +4,6 @@ mysql_packages:
   - mysql-community-server
   - MySQL-python
 
-mysql_root_password: 'secure-root-pw'
-ansible_python_interpreter: /usr/bin/python3
-
-
 db_user: demo_user
 db_user_password: Nec@123456
 db_name: db2
@@ -20,3 +16,11 @@ old_downloaded_rpm: mysql57-community-release-el7-11.noarch.rpm
 
 repo_file1: /etc/yum.repos.d/mysql-community-source.repo 
 repo_file2: /etc/yum.repos.d/mysql-community.repo
+
+
+#-----mysql details
+# ----------------------------- MariaDB ------------------------------
+mysqlpw: Nec@12345
+mysql.users:
+  - user1
+  - user2

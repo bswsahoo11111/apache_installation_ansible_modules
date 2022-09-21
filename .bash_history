@@ -490,3 +490,115 @@ cd mysql_installation/
 ls -lrt
 vi mysql.yaml 
 vi mysql_install/tasks/main.yml 
+ls -lrt
+cd apache_installation/apache_install/
+ls -lrt
+vi tasks/main.yml 
+rm -rfv tasks/.main.yml.swp 
+clear
+vi tasks/main.yml 
+vi vars/main.yml 
+vi tasks/main.yml 
+vi index.html
+vi tasks/main.yml 
+ls -lrt
+mv index.html ../
+ls -lrt
+cd ..
+ansible-playbook apache.yaml -i hosts.txt 
+systemctl status httpd
+vi apache_install/tasks/main.yml 
+vi apache_install/vars/main.yml 
+vi apache_install/handlers/main.yml 
+ansible-playbook apache.yaml -i hosts.txt 
+curl ident.me
+vi apache_install/handlers/main.yml 
+cd ..
+ls -llrt
+ls -lrt
+cd apache_installation/
+ls -lrt
+ansible-galaxy init mysql-db
+ls -lrt
+rm -rfv mysql-db/
+clear
+ls -lrt
+pwd
+rm -rfv my.cnf.j2
+clear
+ls -lrt
+cat index.html 
+cat hosts.txt 
+cat apache.yaml 
+cd apache_install/
+ls -lrt
+cat tasks/main.yml 
+cat vars/main.yml 
+cat handlers/main.yml 
+cd ..
+ls -lrt
+ansible-playbook apache.yaml -i hosts.txt 
+ls -lrt
+cd ..
+cd apache_installation/
+ls -lrt
+cd ..
+ls -lrt
+yum install git -y
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/bswsahoo11111/apache_installation_ansible_modules.git
+git push -u origin main
+https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls 
+git remote add origin git@github.com:bswsahoo11111/apache_installation_ansible_modules.git
+git push -u origin main
+git login
+git config user.email bswsahoo11111@gmail.com
+git config user.password
+git config user.password 111986@mama
+git push -u origin main
+git config --global user.name "bswsahoo11111"
+git config --global user.email "bswsahoo11111@gmail.com"
+git config -l
+git config --global credential.helper libsecret
+git remote set-url origin
+git remote set-url origin https://github.com/bswsahoo11111/apache_installation_ansible_modules.git/
+git push -u origin main
+git remote set-url origin https://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@github.com/bswsahoo11111/apache_installation_ansible_modules.git/
+git push -u origin main
+cd 
+ls-lrt
+ls -lrt
+cd apache_installation/apache_install/
+ls -lrt
+vi tasks/main.yml 
+cd mysql_installation/
+vi mysql.yaml 
+vi mysql_install/tasks/main.yml 
+vi mysql_install/vars/main.yml 
+yum install python39
+yum install PyMySQL
+vi mysql_install/tasks/main.yml 
+vi my.cnf.j2
+vi mysql_install/tasks/main.yml 
+!
+vi mysql_install/tasks/.main.yml.swp 
+rm -f mysql_install/tasks/.main.yml.swp 
+vi mysql_install/tasks/main.yml 
+cd ..
+systemctl status httpd
+mkdir apache_installation
+cd apache_installation/
+cp ../mysql_installation/* .
+cp -r ../mysql_installation/* .
+ls -lrt
+mv mysql.yaml apache.yaml
+mv mysql_install/ apache_install/
+vi apache.yaml 
+ls -lrt
+vi apache.yaml 
+vi apache_install/tasks/main.yml 
+cat /etc/os-release 
+vi apache_install/tasks/main.yml 
